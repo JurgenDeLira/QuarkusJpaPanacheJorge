@@ -11,9 +11,13 @@
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JPA" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JPA" options="-parameters" />
       <module name="artist" options="-parameters" />
       <module name="customer" options="-parameters" />
       <module name="vintage-store" options="-parameters" />
